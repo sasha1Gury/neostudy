@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class RequestDto {
-    Double avgSalary;
-    Long vacationDays;
+    private Double avgSalary;
+    private Long vacationDays;
 }

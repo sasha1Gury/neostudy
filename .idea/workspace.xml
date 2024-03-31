@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e0e1e4b-b545-4224-9314-366724484a55" name="Changes" comment="feat: add date methods">
-      <change afterPath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/service/CalculateServiceImpl.java" afterDir="false" />
+    <list default="true" id="4e0e1e4b-b545-4224-9314-366724484a55" name="Changes" comment="feat: add CalculateService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/controller/CalculateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/controller/CalculateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/service/CalculateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/service/CalculateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/dto/RequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/dto/RequestDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,42 +90,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build CalculatorService.executor": "Run",
-    "Gradle.Build eureka-server.executor": "Run",
-    "Gradle.Build neostudy-test.executor": "Run",
-    "Gradle.CalculateServiceImpTest.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
-    "Spring Boot.CalculatorServiceApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.VacationCalculatorApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "corretto-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sasha/Desktop/yandexGroup/neostudy-test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build CalculatorService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build eureka-server.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build neostudy-test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalculateServiceImpTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalculateServiceImplImpTest.executor&quot;: &quot;Debug&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CalculatorServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.VacationCalculatorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sasha/Desktop/yandexGroup/neostudy-test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -253,7 +252,8 @@
       <workItem from="1711875906925" duration="2227000" />
       <workItem from="1711889460353" duration="2706000" />
       <workItem from="1711892183011" duration="2755000" />
-      <workItem from="1711899961384" duration="12269000" />
+      <workItem from="1711899961384" duration="12842000" />
+      <workItem from="1711913477927" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="delete old gitignore">
       <option name="closed" value="true" />
@@ -311,7 +311,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711907534566</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: add tests for CalculateService">
+      <option name="closed" value="true" />
+      <created>1711912696539</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711912696539</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: add interface CalculateService">
+      <option name="closed" value="true" />
+      <created>1711912718988</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711912718988</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: add CalculateService">
+      <option name="closed" value="true" />
+      <created>1711912778243</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711912778243</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +349,9 @@
     <MESSAGE value="feat: calculate work" />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="feat: add date methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add date methods" />
+    <MESSAGE value="feat: add tests for CalculateService" />
+    <MESSAGE value="feat: add interface CalculateService" />
+    <MESSAGE value="feat: add CalculateService" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add CalculateService" />
   </component>
 </project>
