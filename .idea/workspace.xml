@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e0e1e4b-b545-4224-9314-366724484a55" name="Changes" comment="add api-gateway">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="4e0e1e4b-b545-4224-9314-366724484a55" name="Changes" comment="add CalculateService">
+      <change afterPath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/controller/CalculateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/dto/RequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/service/CalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/config/WebClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/dto/RequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/service/VacationCalculatorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationCalculator/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/VacationCalculator/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/controller/VacationCalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/controller/VacationCalculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +52,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="neostudy-test" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="neostudy-test" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -66,6 +69,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -77,37 +83,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build eureka-server.executor": "Run",
-    "Gradle.Build neostudy-test.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.VacationCalculatorApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "corretto-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sasha/Desktop/yandexGroup/neostudy-test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build CalculatorService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build eureka-server.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build neostudy-test.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CalculatorServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.VacationCalculatorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sasha/Desktop/yandexGroup/neostudy-test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -169,6 +177,8 @@
       <updated>1711873907983</updated>
       <workItem from="1711875801579" duration="95000" />
       <workItem from="1711875906925" duration="2227000" />
+      <workItem from="1711889460353" duration="2706000" />
+      <workItem from="1711892183011" duration="1654000" />
     </task>
     <task id="LOCAL-00001" summary="delete old gitignore">
       <option name="closed" value="true" />
@@ -194,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711881525516</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add CalculateService">
+      <option name="closed" value="true" />
+      <created>1711882241210</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711882241210</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +222,7 @@
     <MESSAGE value="delete old gitignore" />
     <MESSAGE value="add eureka server" />
     <MESSAGE value="add api-gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="add api-gateway" />
+    <MESSAGE value="add CalculateService" />
+    <option name="LAST_COMMIT_MESSAGE" value="add CalculateService" />
   </component>
 </project>
