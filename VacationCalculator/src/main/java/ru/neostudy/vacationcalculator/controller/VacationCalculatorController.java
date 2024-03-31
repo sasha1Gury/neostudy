@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class VacationCalculatorController {
 
-    @GetMapping("/test")
+    @GetMapping("/calculacte")
     public String test() {
         return "sdhalksdjhfl";
     }
