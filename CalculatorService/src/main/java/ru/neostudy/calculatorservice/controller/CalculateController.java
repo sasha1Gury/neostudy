@@ -1,5 +1,6 @@
 package ru.neostudy.calculatorservice.controller;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,12 +10,9 @@ import ru.neostudy.calculatorservice.service.CalculateService;
 import ru.neostudy.calculatorservice.service.CalculateServiceImpl;
 
 @RestController
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class CalculateController {
     private final CalculateService calculateService;
-    public CalculateController(CalculateService calculateService) {
-        this.calculateService = calculateService;
-    }
 
     @PostMapping("/calculate")
     public Double calculate(@RequestBody RequestDto requestDto) {
