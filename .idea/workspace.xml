@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e0e1e4b-b545-4224-9314-366724484a55" name="Changes" comment="feat: calculate work" />
+    <list default="true" id="4e0e1e4b-b545-4224-9314-366724484a55" name="Changes" comment="workspace.xml">
+      <change afterPath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/dto/RequestDateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/dto/RequestDateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/service/VacationCalculatorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/controller/CalculateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/controller/CalculateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/service/CalculateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/src/main/java/ru/neostudy/calculatorservice/service/CalculateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/controller/VacationCalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/controller/VacationCalculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/service/VacationCalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/service/VacationCalculatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +60,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -57,9 +68,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sasha1Gury&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4d963527-2fcd-42a5-86ec-9d973e691201" />
+        <option name="url" value="git@github.com:sasha1Gury/neostudy.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -166,7 +191,8 @@
       <workItem from="1711875801579" duration="95000" />
       <workItem from="1711875906925" duration="2227000" />
       <workItem from="1711889460353" duration="2706000" />
-      <workItem from="1711892183011" duration="2072000" />
+      <workItem from="1711892183011" duration="2755000" />
+      <workItem from="1711899961384" duration="7334000" />
     </task>
     <task id="LOCAL-00001" summary="delete old gitignore">
       <option name="closed" value="true" />
@@ -208,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711894127314</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="workspace.xml">
+      <option name="closed" value="true" />
+      <created>1711895241727</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711895241727</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +254,7 @@
     <MESSAGE value="add api-gateway" />
     <MESSAGE value="add CalculateService" />
     <MESSAGE value="feat: calculate work" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: calculate work" />
+    <MESSAGE value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
   </component>
 </project>

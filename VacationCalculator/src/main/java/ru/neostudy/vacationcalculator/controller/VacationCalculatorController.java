@@ -1,24 +1,28 @@
 package ru.neostudy.vacationcalculator.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import ru.neostudy.vacationcalculator.dto.RequestDateDto;
 import ru.neostudy.vacationcalculator.dto.RequestDto;
 import ru.neostudy.vacationcalculator.service.VacationCalculatorService;
 
 @RestController
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class VacationCalculatorController {
     private final VacationCalculatorService vacationCalculatorService;
-    public VacationCalculatorController(VacationCalculatorService vacationCalculatorService) {
-        this.vacationCalculatorService = vacationCalculatorService;
+
+    @GetMapping("/calculacte")
+    public Double getVacationPay(@RequestParam("average_salary") Double averageSalary,
+                                 @RequestParam("vacation_days") Long vacationDays) {
+        RequestDto requestDto = new RequestDto();
+        requestDto.setAvgSalary(averageSalary);
+        requestDto.setVacationDays(vacationDays);
+        return vacationCalculatorService.calculate(requestDto);
     }
 
     @PostMapping("/calculacte")
-    public Double test(@RequestBody RequestDto requestDto) {
-        return vacationCalculatorService.calculate(requestDto);
+    public Double getVacationPayByDays(@RequestBody RequestDateDto requestDateDto) {
+        return vacationCalculatorService.calculateWithDate(requestDateDto);
     }
 
 }
