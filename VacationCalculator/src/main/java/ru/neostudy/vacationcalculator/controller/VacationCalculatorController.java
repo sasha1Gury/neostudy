@@ -11,7 +11,7 @@ import ru.neostudy.vacationcalculator.service.VacationCalculatorService;
 public class VacationCalculatorController {
     private final VacationCalculatorService vacationCalculatorService;
 
-    @GetMapping("/calculacte")
+    @GetMapping("/calculate")
     public Double getVacationPay(@RequestParam("average_salary") Double averageSalary,
                                  @RequestParam("vacation_days") Long vacationDays) {
         RequestDto requestDto = new RequestDto();
@@ -20,7 +20,7 @@ public class VacationCalculatorController {
         return vacationCalculatorService.calculate(requestDto);
     }
 
-    @PostMapping("/calculacte")
+    @PostMapping("/calculate")
     public Double getVacationPayByDays(@RequestBody RequestDateDto requestDateDto) {
         return vacationCalculatorService.calculateWithDate(requestDateDto);
     }

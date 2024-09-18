@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e0e1e4b-b545-4224-9314-366724484a55" name="Changes" comment="feat: add fields in RequestDto now private">
-      <change beforePath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/service/VacationCalculatorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/VacationCalculator/src/main/java/ru/neostudy/vacationcalculator/service/VacationCalculatorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/amplicode-jpa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/amplicode-settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +41,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="neostudy-test" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -73,6 +72,17 @@
         <option name="accountId" value="4d963527-2fcd-42a5-86ec-9d973e691201" />
         <option name="url" value="git@github.com:sasha1Gury/neostudy.git" />
       </UrlAndAccount>
+    </option>
+  </component>
+  <component name="GradleModuleStateConfig" initialized="true">
+    <option name="configPaths">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C:\Users\sasha\Desktop\dev\neostudy\build.gradle.kts" />
+        <entry key="$PROJECT_DIR$/CalculatorService" value="C:\Users\sasha\Desktop\dev\neostudy\CalculatorService\build.gradle" />
+        <entry key="$PROJECT_DIR$/VacationCalculator" value="C:\Users\sasha\Desktop\dev\neostudy\VacationCalculator\build.gradle" />
+        <entry key="$PROJECT_DIR$/api-gateway" value="C:\Users\sasha\Desktop\dev\neostudy\api-gateway\build.gradle" />
+        <entry key="$PROJECT_DIR$/eureka-server" value="C:\Users\sasha\Desktop\dev\neostudy\eureka-server\build.gradle" />
+      </map>
     </option>
   </component>
   <component name="KubernetesApiProvider">{
@@ -146,7 +156,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CalculateServiceImplImpTest">
+  <component name="RunManager" selected="Spring Boot.CalculatorServiceApplication">
     <configuration name="CalculateServiceImpTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -233,9 +243,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
-        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
-        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
       </set>
     </attachedChunks>
   </component>
@@ -253,6 +262,7 @@
       <workItem from="1711892183011" duration="2755000" />
       <workItem from="1711899961384" duration="12842000" />
       <workItem from="1711913477927" duration="339000" />
+      <workItem from="1726692869936" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="delete old gitignore">
       <option name="closed" value="true" />
